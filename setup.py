@@ -12,7 +12,7 @@ setup(
     url='https://github.com/trek10inc/cfn-transform',
     long_description=readme,
     long_description_content_type='text/markdown',
-    py_modules=['./src/transformation'],
+    py_modules=['transformation'],
     install_requires=[
         'cfn-lint~=0.61.0',
         'click==7.1.2',
