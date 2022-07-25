@@ -5,7 +5,7 @@ with open('README.md') as f:
 
 setup(
     name='cfn-transform',
-    version='0.1',
+    version='1.0.1',
     author = 'Trek10, Inc',
     author_email = 'package-management@trek10.com',
     license='MIT',
