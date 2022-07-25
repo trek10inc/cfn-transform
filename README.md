@@ -45,4 +45,3 @@ cfn-transform [example.json] -f [text.txt]
 cfn-transform [example.yaml] --file [text.txt]
 ```
 *Option to attach to return transformed to a specified text file*
-## Usage
