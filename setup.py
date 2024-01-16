@@ -5,7 +5,7 @@ with open('README.md') as f:
 
 setup(
     name='cfn-transform',
-    version='1.0.2',
+    version='1.1.0',
     author = 'Trek10, Inc',
     author_email = 'package-management@trek10.com',
     license='MIT',
@@ -14,7 +14,7 @@ setup(
     long_description_content_type='text/markdown',
     py_modules=['transformation'],
     install_requires=[
-        'cfn-lint~=0.61.0',
+        'cfn-lint~=0.83.2',
         'click==7.1.2',
     ],
     entry_points='''
