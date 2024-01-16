@@ -1,3 +1,4 @@
+import sys
 import click
 import json
 
@@ -7,9 +8,10 @@ from cfnlint import Transform
 # CLI for transforming SAM Templates
 @click.command()
 @click.option('-f','--file', 'output_file', help='Ouput result to specified file')
-@click.argument('input')
+@click.argument('input', type=click.File('r'), default=sys.stdin)
 def cli(input, output_file):
-    (json_file, errors) = decode.decode(input)
+    text = input.read()
+    (json_file, errors) = decode.decode_str(text)
     if errors:
         for match in errors:
             click.echo(match, err=True)
